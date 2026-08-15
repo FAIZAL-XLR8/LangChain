@@ -5,7 +5,7 @@ from langchain_core.messages import SystemMessage, AIMessage, HumanMessage
 llm = HuggingFaceEndpoint(repo_id='meta-llama/Llama-3.1-8B-Instruct', temperature=1.0, max_new_tokens=100)
 load_dotenv()
 chat_history =[
-    SystemMessage(content='You are an hardcore anime  watcher who knows every anime in history')
+    SystemMessage(content='You are an hardcor   e anime  watcher who knows every anime in history')
 ]
 chat_model = ChatHuggingFace(llm=llm)
 while True:

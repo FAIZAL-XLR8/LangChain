@@ -1,0 +1,18 @@
+                                                 python -u "c:\Users\HP\Desktop\CODING\LANG_CHAIN\4.PROMPTS\5_Message_placeholdr.py"
+Gone Girl is a psychological thriller directed by David Fincher, based on the novel by Gillian Flynn. Here's a brief summary:
+
+The movie follows the story of Nick Dunne (played by Ben Affleck) and his wife Amy (played by Rosamund Pike), a seemingly perfect couple who are married for five years. On the day of their fifth wedding anniversary, Amy goes missing, and Nick becomes the prime suspect in her disappearance.
+
+As the investigation unfolds, dark secrets about their marriage and Nick's infidelity are revealed. The media portrays Nick as a cold-blooded husband who murdered his wife, and the public turns against him.
+
+However, through a series of twists and turns, it's revealed that Amy is not the innocent victim she seemed to be. In fact, she's a master manipulator who's been planning her disappearance for months. The movie takes a dark and twisted turn as it's revealed that Amy is alive and has been orchestrating her own disappearance to frame Nick for her murder.
+
+The movie explores themes of marriage, relationships, and the complexities of human behavior. It's a gripping and suspenseful thriller that keeps you on the edge of your seat until the very end.
+
+If you liked Gone Girl, I'd recommend the following movies that share similar themes and elements:
+
+1. **Sharp Objects** (HBO series, 2018): A psychological thriller about a journalist who returns to her hometown to cover a series of murders, only to find herself confronting her own dark past.
+2. **Prisoners** (2013): A crime thriller about two parents who will stop at nothing to find their missing daughters, and the dark secrets that are revealed along the way.
+3. **Knives Out** (2019): A whodunit mystery that follows a detective as he investigates the murder of a wealthy patriarch, with a twisty and complex plot that keeps you guessing until the end.
+4. **The Girl on the Train** (2016): A psychological thriller about a woman who becomes obsessed with a perfect couple, only to discover that their lives are not as they seem.
+5. **Dark Places** (2015): A crime thriller about a woman who returns to her hometown to uncover the truth about her family's dark past and the murder of her brother.
