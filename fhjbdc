@@ -1,0 +1,13 @@
+* [33m3d48edb[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m small chatbot
+* [33m81741f0[m Added loading from a json file
+* [33m6a84473[m added new prompts lec conmtent
+* [33m5b297a2[m added semantic_searechg
+* [33m5d40c45[m added semantic search
+* [33m657c2d4[m Add comment to clarify print statement output
+* [33m8669652[m embeddings_open_ai
+* [33m290c55c[m done
+* [33m2156e4f[m added open_source_llm
+* [33m4454589[m Added chatmodels
+* [33m3c6536b[m added open_ai
+* [33mcf1b15f[m added_open_ai
+* [33m44e8987[m started langchain
