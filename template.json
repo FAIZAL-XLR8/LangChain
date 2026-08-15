@@ -1,0 +1,15 @@
+{
+    "name": null,
+    "input_variables": [
+        "name"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\nTell me about anime character {name}\n    ",
+    "template_format": "f-string",
+    "validate_template": true,
+    "_type": "prompt"
+}

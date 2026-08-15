@@ -4,6 +4,10 @@ from dotenv import load_dotenv
 load_dotenv()
 llm = HuggingFaceEndpoint(repo_id="meta-llama/Llama-3.1-8B-Instruct", task="text-generation")
 chat_model = ChatHuggingFace(llm=llm)
+
+## 3 steps -->1 create the template
+# --> 2) give the necessary input variables for the dynamic prompts(user_templte.invoke())
+#-->3) model.invoke(final_prompt)
 #create the template for dynamic prompt
 query_template = PromptTemplate(
     template = 'Tell me about this anime character : {name}',
