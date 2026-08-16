@@ -13,6 +13,7 @@ user_prompt = ChatPromptTemplate([
 chat_history = []
 with open('4.PROMPTS/history.txt') as f:
     chat_history.append(f.readlines())
+    
 prompt = user_prompt.invoke({'expert' : 'movie', 'movie' : 'Gone-Girl', 'query' : 'what is the summary of the movie', 'chat_history' :chat_history})
 response = chat_model.invoke(prompt)
 print(response.content)
