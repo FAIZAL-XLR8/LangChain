@@ -15,9 +15,9 @@ prompt1 = PromptTemplate(
     partial_variables={"format_instruction" : parser.get_format_instructions()}
 
 )
-chain = prompt1 | chat_model
+chain = prompt1 | chat_model | parser
 result = chain.invoke({"topic":"Blach_hole"})
 #
-print(parser.parse(result.content))
-
+#print(parser.parse(result.content))
+print(result)
 
