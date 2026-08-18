@@ -11,7 +11,13 @@ llm = HuggingFaceEndpoint(
 chat_model = ChatHuggingFace(llm=llm)
 parser = StrOutputParser()
 prompt = PromptTemplate(
-    template="What is the meaning of {topic}\n{format_instruction}"
+    template="What is the meaning of {topic} in 2 lines\n",
     input_variables=['topic'],
-    partial_variables={'format_instruction' : parser.get_format_}
+   
 )
+chain = prompt | chat_model| parser
+#for sequential chains --> use prompt1 | chat_model | parser | prompt2 | chat_model | parser 
+result = chain.invoke({"topic" : "anime"})
+print(result)
+#chains visualed by below statement
+chain.get_graph().print_ascii()
