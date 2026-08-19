@@ -29,6 +29,9 @@ chain1 = RunnableParallel(
         'post' : RunnableSequence(prompt2, chat_model, parser)
     }
 )
+result2 = chain1.invoke({'topic' : "AI/LLMS in era of tommorow"})
+print(result2['twitter'])
+print(result2['post'])
 chain2 = RunnableSequence(chain1, prompt3, chat_model, parser)
 result = chain2.invoke({'topic' : "Data Structures and algorithm"})
 print(result)
