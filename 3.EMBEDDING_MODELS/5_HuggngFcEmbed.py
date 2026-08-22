@@ -1,0 +1,44 @@
+from langchain_huggingface import HuggingFaceEmbeddings
+from sklearn.metrics.pairwise import cosine_similarity
+query = """
+Death Note
+
+Death Note is a Japanese manga series written by Tsugumi Ohba and illustrated by Takeshi Obata. It was later adapted into a highly popular anime television series.
+
+The story follows Light Yagami, a highly intelligent high school student who discovers a mysterious notebook called the Death Note. The notebook has the supernatural ability to kill a person whose name is written in it, provided the writer knows the person's face.
+
+After discovering the notebook, Light decides to use it to eliminate criminals and create what he considers to be a perfect world without crime. He takes the name "Kira" and begins secretly passing judgment on criminals.
+
+Light's actions attract the attention of the world's greatest detective, known simply as L. L begins investigating Kira and attempts to discover his identity. This creates a psychological battle between Light and L, with both characters relying on intelligence, deception, deduction, and strategic planning.
+
+The Death Note itself originally belongs to Ryuk, a Shinigami (death god). Ryuk drops the notebook into the human world because he is bored and wants to observe what happens when a human obtains it. Although Ryuk is fascinated by Light's actions, he generally remains an observer rather than directly helping Light.
+
+Major themes of Death Note include morality, justice, power, corruption, identity, and the consequences of absolute authority. The series asks difficult questions about whether someone can legitimately decide who deserves to live or die and whether good intentions can justify extreme actions.
+
+Death Note is widely known for its suspenseful storytelling, complex characters, psychological conflicts, and strategic battles between its central characters. The anime consists of 37 episodes and originally aired from 2006 to 2007.
+
+Main Characters:
+- Light Yagami: The protagonist who discovers the Death Note and becomes known as Kira.
+- L: A brilliant detective who investigates Kira.
+- Ryuk: A Shinigami who owns the Death Note initially dropped into the human world.
+- Misa Amane: A model and Kira supporter who also possesses a Death Note.
+- Near: A young detective who becomes involved in the investigation of Kira.
+- Mello: Another successor candidate to L who pursues Kira using a different approach.
+
+Death Note remains one of the most influential and widely recognized psychological thriller anime series.
+
+"""
+# Explicitly set the device to CPU
+model_kwargs = {'device': 'cpu'}
+
+# Initialize the embedding model
+embeddings = HuggingFaceEmbeddings(
+    model_name="sentence-transformers/all-MiniLM-L6-v2",
+    model_kwargs=model_kwargs
+)
+doc_embedding = embeddings.embed_documents(query)
+user_query='who was Light Yagami'
+user_embedding = embeddings.embed_query(user_query)
+list_of_similarity = cosine_similarity([user_embedding], doc_embedding)[0] 
+print(list_of_similarity)
+
