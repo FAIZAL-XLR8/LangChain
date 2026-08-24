@@ -8,6 +8,7 @@ splitter = RecursiveCharacterTextSplitter(
     chunk_overlap=20,
     
 )   
+
 loader2 = TextLoader('Death_Note.txt')
 document2 = loader.load()
 #result = splitter.split_documents(document)
